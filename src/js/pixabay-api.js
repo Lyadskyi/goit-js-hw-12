@@ -1,5 +1,3 @@
-// 1. Створюємо функцію для HTTP-запитів, яка створює запит на сервер
-
 import iziToast from "izitoast";
 
 import "izitoast/dist/css/iziToast.min.css";
@@ -48,9 +46,9 @@ export async function requestToServer(link) {
         });
         galleryImages.innerHTML = '';
         return;
-      }
+      };
 
-      allPages = Math.ceil(data.totalHits / request.per_page);
+    allPages = Math.ceil(data.totalHits / request.per_page);
 
       if (page === allPages) {
         iziToast.info({
@@ -64,20 +62,20 @@ export async function requestToServer(link) {
           position: 'topRight',
         });
 
-        loadBtnEl.classList.add('is-hidden');
+    loadBtnEl.classList.add('is-hidden');
         return;
-      }
+      };
 
-      createMarkup(data);
+    createMarkup(data);
 
-      const scrollHight = galleryImages.getBoundingClientRect().height;
+  const scrollHeight = galleryImages.getBoundingClientRect().height;
 
-      window.scrollBy({
-        top: scrollHight,
-        behavior: 'smooth',
-      });
+    window.scrollBy({
+    top: scrollHeight,
+    behavior: 'smooth',
+    });
 
-      return lightbox.refresh();
+        return lightbox.refresh();
     })
     .catch(error => {
       console.log(error);

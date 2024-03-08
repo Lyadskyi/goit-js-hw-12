@@ -1,5 +1,3 @@
-// 1. Створюємо функцію для відображення елементів інтерфейсу, яка приймає параметром масив, який буде огортати бекенд
-
 import { galleryImages, loadBtnEl } from '../main';
 
 export function createMarkup(data) {

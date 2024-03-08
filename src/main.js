@@ -1,10 +1,10 @@
 import { requestToServer } from "./js/pixabay-api";
 
-const formEl = document.querySelector('.form');
 export const inputEl = document.querySelector('input[name=message]');
 export const galleryImages = document.querySelector('.gallery-images');
 export const loaderEl = document.querySelector('.loader');
 export const loadBtnEl = document.querySelector('.load-btn');
+const formEl = document.querySelector('.form');
 const KEY = '42641678-dfe8c371983b31bc21d252361';
 
 export const request = new URLSearchParams ({
