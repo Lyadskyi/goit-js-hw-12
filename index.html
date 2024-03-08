@@ -6,8 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>goit-js-hw-12</title>
     
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script type="module" crossorigin src="/goit-js-hw-12/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/goit-js-hw-12/assets/index-d3b5fc92.css">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-5401a4b0.js">
+    <link rel="stylesheet" href="/goit-js-hw-12/assets/vendor-cf6910df.css">
+    <link rel="stylesheet" href="/goit-js-hw-12/assets/index-42a5172e.css">
   </head>
   <body>
     <section class="search-images">
@@ -21,10 +29,13 @@
         <button type="submit">Search</button>
       </form>
     </section>
+
     <div class="gallery">
+      <span class="loader is-hidden"></span>
       <ul class="gallery-images"></ul>
+      <button class="load-btn is-hidden" type="button">Load more</button>
     </div>
-    
+
     
   </body>
 </html>
